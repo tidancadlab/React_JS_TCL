@@ -1,0 +1,8 @@
+
+div.divclass{
+    height: calc(100vh - 352px);
+    margin-top: 75.78px;
+}
+.imgWidth{
+    width:fit-content;
+}

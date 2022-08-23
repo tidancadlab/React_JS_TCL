@@ -1,0 +1,22 @@
+*
+{
+    scroll-padding-top: 100px;
+}
+html{
+    margin: 0;
+    scroll-padding-top: 100px;
+}
+img{
+    width: 50px;
+}
+nav.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
+    scroll-padding-top: 100px;
+}
+div.raw1{
+    margin-top: 80px;
+    
+}
