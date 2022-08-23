@@ -6,35 +6,28 @@ class AboutUs extends React.Component {
     state = {}
     render() {
         return (
-            <>
-                <div className="bootom bg-dark noprint">
-                    <div className="card mb-3 bg-dark">
-                        <div className="row g-0">
-                            <div className="col-md-4">
-                                <img src={image} className="img-fluid imgWidth rounded-start" alt="..." />
-                            </div>
-                            <div className="col-md-8">
-                                <div className="card-body text-light">
-                                    <h5 className="card-title">Contact us</h5>
-                                    <p className="card-text">
-                                        TIDAN CAD LAB
-                                    </p>
-                                    <p className="card-text">
-                                        The Tidan Group
-                                    </p>
-                                    <li className="card-text">Contact No. +91 70169 47328</li>
-                                    <li className="card-text">Mail us on tidancadlab@gmail.com</li>
-                                    <p className="card-text">121/3, New Ahir wara, Old faridabad (HR) -121002</p>
-                                    <p className="card-text">
-                                        <small className="text-muted">Last updated 3 mins ago</small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                <>
+                <div className="margin">
+                    
+                <div className="bg-dark margin d-flex">
+                    <div className="bg-dark">
+                        <img src={image} alt="" srcset="" />
                     </div>
-                </div>      
+                    <div className="ms-4 text-light">
+                        <h4 className="mb-0">About US</h4>
+                        <h3 className="mb-0">Tidan Cad Lab</h3>
+                        <h4 className="mb-0">The Tidan Group</h4>
+                        <address className="mb-0" >121/03, NewAhir Wara Old Faridabad - 121002</address>
+                        <p>Contact us on +91 70169 47328</p>
+            
+                    </div>
 
-            </>
+                </div>
+
+                </div>
+                </>
+
+
         );
     }
 }
