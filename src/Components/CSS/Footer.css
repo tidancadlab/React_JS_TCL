@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(22, 22, 21);
+    color: white;
+}
+
+.link-container {
+    display: flex;
+    width: -moz-fit-content;
+    padding: 25px;
+    justify-content: space-around;
+
+}
+
+.use-links {
+    position: relative;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+    transition: ease-in 0.1s;
+}
+
+a:hover {
+    background-color: rgba(255, 228, 196, 0.253);
+    color: white;
+    border-radius: 2px;
+}
+
+.link-head {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

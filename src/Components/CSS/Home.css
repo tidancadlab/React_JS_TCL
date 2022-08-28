@@ -1,8 +1,168 @@
-
-div.divclass{
-    height: calc(100vh - 352px);
-    margin-top: 75.78px;
+.home {
+    background-color: #212121;
+    padding-bottom: 50px;
 }
-.imgWidth{
-    width:fit-content;
+
+.home-container {
+    margin-left: 80px;
+}
+
+.main-container {
+    left: 20%;
+    width: 1200px;
+    background-color: rgba(74, 77, 77, 0.26);
+    margin: auto;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+}
+
+.status-container {
+    width: -moz-fit-content;
+    width: calc(100% - 40px);
+    height: 240px;
+    background: rgb(255, 255, 255);
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 0;
+
+}
+
+.card {
+    max-width: 300px;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(43, 41, 41);
+    margin: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.card-inner {
+    margin: auto;
+    color: white;
+}
+
+.status {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.status-items {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.status-items::before {
+    margin-bottom: -4px;
+    margin-right: 10px;
+
+}
+
+
+
+.name-received::before {
+    content: url(../../icon/bank.svg);
+}
+
+.name-expenses::before {
+    content: url(../../icon/cash.svg);
+}
+
+.name-available::before {
+    content: url(../../icon/wallet.svg);
+}
+
+
+.item-amount::before {
+    content: url(../../icon/currency-rupee.svg);
+    margin-right: 2px;
+}
+
+.item-amount::after {
+    content: '/-';
+}
+
+.graph-card {
+    max-width: 600px;
+}
+
+.tran-container {
+    /* width: calc(100% -80px); */
+    margin: 20px;
+    padding: 20px;
+    height: 500px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    column-gap: 0;
+    table-layout: fixed;
+    border-collapse: collapse;
+    
+}
+
+caption {
+    font-size: 25px;
+    margin: auto;
+    margin-bottom: 10px;
+    border-bottom: 1px solid;
+    width: fit-content;
+}
+
+tr {
+    text-align: left;
+}
+
+td {
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0 10px;
+}
+
+.table-srno, .table-edit {
+    max-width: 5%;
+}
+
+.table-date {
+    width: 10%;
+}
+.table-biller{
+    width: 20%;
+}
+.table-item{
+    width: 20%;
+}
+.table-amount,.table-approval, .table-file{
+    width: 9%;
+}
+.table-remark{
+    width: 150px;
+}
+.edit-img{
+    margin-left: 10px;
+    cursor: pointer;
 }
