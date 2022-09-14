@@ -1,26 +1,23 @@
 .home {
     background-color: #212121;
-    padding-bottom: 50px;
 }
 
 .home-container {
     margin-left: 80px;
+    min-height: calc(100vh - 80px);
 }
 
 .main-container {
     left: 20%;
-    width: 1200px;
+    max-width: 1200px;
     background-color: rgba(74, 77, 77, 0.26);
     margin: auto;
     border-radius: 10px;
     backdrop-filter: blur(10px);
-    padding: 20px 0;
+    padding: 20px 0 1px 0;
 }
 
 .status-container {
-    width: -moz-fit-content;
-    width: calc(100% - 40px);
-    height: 240px;
     background: rgb(255, 255, 255);
     margin: 20px;
     border-radius: 10px;
@@ -71,29 +68,8 @@
     margin-right: 10px;
 
 }
-
-
-
-.name-received::before {
-    content: url(../../icon/bank.svg);
-}
-
-.name-expenses::before {
-    content: url(../../icon/cash.svg);
-}
-
-.name-available::before {
-    content: url(../../icon/wallet.svg);
-}
-
-
-.item-amount::before {
-    content: url(../../icon/currency-rupee.svg);
-    margin-right: 2px;
-}
-
-.item-amount::after {
-    content: '/-';
+.status-items svg{
+    margin-right: 10px;
 }
 
 .graph-card {
@@ -104,7 +80,6 @@
     /* width: calc(100% -80px); */
     margin: 20px;
     padding: 20px;
-    height: 500px;
     background: white;
     border-radius: 10px;
     display: flex;
@@ -117,10 +92,7 @@
 
 table {
     width: 100%;
-    column-gap: 0;
-    table-layout: fixed;
-    border-collapse: collapse;
-    
+    padding: 20px;
 }
 
 caption {
@@ -130,39 +102,47 @@ caption {
     border-bottom: 1px solid;
     width: fit-content;
 }
-
-tr {
-    text-align: left;
-}
-
 td {
     max-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     margin: 0 10px;
+    padding: 0 5px;
 }
-
-.table-srno, .table-edit {
-    max-width: 5%;
+thead{
+    background-color: #212121;
+    color: white;
+    border-radius: 5px;
+    column-width: none;
+    
 }
-
-.table-date {
+.amountList{
     width: 10%;
 }
-.table-biller{
-    width: 20%;
-}
-.table-item{
-    width: 20%;
-}
-.table-amount,.table-approval, .table-file{
-    width: 9%;
-}
-.table-remark{
-    width: 150px;
-}
-.edit-img{
-    margin-left: 10px;
+.index-id{
+    text-decoration: underline;
     cursor: pointer;
+    width: 3%;
+}
+.index-date{
+    width: 10%;
+}
+.index-approval{
+    width: 10%;
+}
+tr{
+    transition: ease 0.5s;
+}
+tr:hover{
+    background-color: coral;
+}
+.approved_svg{
+    fill: rgb(1, 177, 1);
+}
+.pending_svg{
+    fill: rgb(204, 204, 2);
+}
+.reject_svg{
+    fill: red;
 }

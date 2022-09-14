@@ -4,6 +4,7 @@
 }
 
 canvas{
-    background-color: white;
+    background-color: rgb(43, 41, 41);
     border-radius: 10px;
+    color: white;
 }

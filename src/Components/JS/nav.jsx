@@ -8,17 +8,22 @@ import Linkedin from '../../../src/icon/linkedin.svg'
 import Twitter from '../../../src/icon/twitter.svg'
 import Whatsapp from '../../../src/icon/whatsapp.svg'
 import Youtube from '../../../src/icon/youtube.svg'
+import { Link } from "react-router-dom";
+
 
 
 class Navbar extends React.Component {
+    
+
     render() {
         return (
             <>
                 <nav className="nav">
                     <div className="navBar">
                         <div className="logo">
-                            <img src={Logo} alt="Logo" className="logoImg" />
+                            <Link to='/'><img src={Logo} alt="Logo" className="logoImg" /></Link>
                         </div>
+                        
                         <div className="search">
                             <div className="searchPanel">
                                 <input type="text" className="searchInput" placeholder="Search for Expenses" />
@@ -31,7 +36,7 @@ class Navbar extends React.Component {
                         </div>
                         <div className="socialMedia">
                             <h6 className="social-head">Follow us on</h6>
-                            <a href="#">
+                            <a href="tidancadlab.xyz">
                                 <img src={Github} alt="" />
                             </a>
                             <a href="#">
@@ -49,7 +54,7 @@ class Navbar extends React.Component {
                             <a href="#">
                                 <img src={Whatsapp} alt="" />
                             </a>
-                            <a href="#">
+                            <a href="youtube.com">
                                 <img src={Youtube} alt="" />
                             </a>
                         </div>

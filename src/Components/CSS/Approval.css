@@ -1,0 +1,67 @@
+.Approval_div{
+    height: calc(100vh - 180px);
+    background-color: #212121;
+    padding-top:100px;
+    padding-left: 100px;
+    padding-right: 50px;
+}
+.Approval_div>div{
+    position: relative;
+    max-width: 1200px;
+    max-height: 500px;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+}
+.mainApproval{
+    /* max-width: 100%; */
+    height: 100%;
+    height: -moz-fit-content;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.mainApproval ul{
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid white;
+    gap: 4px;
+    align-items: center ;
+}
+.mainApproval ul li{
+    color: white;
+    height: 32px;
+    padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: -webkit-fill-available;
+    border-right: 1px solid;
+
+}
+.mainApproval ul li select{
+    width: auto;
+}
+.iDul{
+    max-width: 4%;
+}
+.dateLi{
+    max-width: 7%;
+}
+.projectLi{
+    max-width: 6%;
+}
+.btnLi{
+    max-width: 80px;
+}
+.text_center{
+    text-align: center;
+}
+ul .approvalSelect{
+    max-width: 115px;
+}
+ul li button{
+    margin: 0;
+}

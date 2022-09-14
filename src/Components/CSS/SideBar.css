@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
 
-.container {
+.sidebar-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,11 +8,15 @@
     gap: 14px;
     position: absolute;
     width: 78px;
-    height: 700px;
+    height: 600px;
     left: 0px;
     top: 80px;
     background: #3B3936;
-    border-radius: 0px 10px 0px 0px;
+    border-radius: 0px 20px 20px 0px;
+    transition: ease-in-out 0.5s;
+}
+.sidebar-container_not{
+    width: 200px;
 }
 
 .bi-list {
@@ -25,13 +29,16 @@
     margin-left: -15px;
     cursor: pointer;
     padding: 10px;
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.1s;
     border-radius: 50%;
 }
 
 .bi-list:hover {
     background-color: #575655;
     border-radius: 50%;
+}
+.bi-list:active{
+    background-color: #747271;
 }
 
 .barMenu {
@@ -41,13 +48,22 @@
     padding: 0px;
     gap: 9px;
     width: 78px;
-    height: 323px;
     flex: none;
     order: 0;
     flex-grow: 0;
 }
 
-.barMenu-btn {
+.barMenu a{
+    padding: 0;
+    margin: 0;
+    
+}
+.barMenu a:hover{
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+.barMenuBtn {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,54 +72,33 @@
     gap: 2px;
     height: 54px;
     border-radius: 0px 10px 10px 0px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     cursor: pointer;
+    color: white;
 }
 
-.btn-dashboard {
-    background: #FF5F5D;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.active{
+    background-color: #FF5F5D;
+    border-radius: 0px 10px 10px 0px;
+}
+.active:hover{
+    background-color: #FF5F5D;
 }
 
-.btn-expenses {
-    background: #524F53;
-    transition: ease-in-out 0.1s;
+.notActive{
+    background-color: #212121;
+    border-radius: 0px 10px 10px 0px;
 }
 
-.btn-expenses:hover {
+.notActive:hover {
     background-color: #696669;
 }
 
 
-.bar-icon {
-    width: 30px;
-    height: 30px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.barMenu-btn svg{
+    width: 25px;
+    height: 35px;
 }
 
-.icon-house {
-    content: url(/src/icon/house.svg);
-}
-
-.icon-expenses {
-    content: url(/src/icon/cash-coin.svg);
-}
-
-.icon-approval {
-    content: url(/src/icon/patch-check.svg);
-}
-
-.icon-graph {
-    content: url(/src/icon/graph-up.svg);
-}
-
-.icon-help {
-    content: url(/src/icon/question-square.svg);
-}
 
 .btn-link {
     width: 52px;
@@ -121,13 +116,6 @@
     flex-grow: 0;
 }
 
-.link-dashboard {
-    color: #1A1C20;
-}
-
-.link-expenses {
-    color: white;
-}
 
 .logIn-container {
     position: absolute;
